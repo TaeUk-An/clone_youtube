@@ -1,0 +1,244 @@
+:root {
+  /* text color */
+  --red-color: #ff0000;
+  --white-color: #ffffff;
+  --black-color: #030303;
+  --blue-color: #065fd4;
+  --dark-gray-color: #909090;
+  --light-gray-color: #e0e0e0;
+
+  /* size */
+  --padding: 12px;
+  --avarta-size: 36px;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+button :focus {
+  background-color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  padding: var(--padding);
+  justify-content: space-between;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  margin-right: var(--padding);
+}
+
+/* Video Player */
+.video_player {
+  text-align: center;
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+}
+
+.video_player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* Video Info */
+
+body > .info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+  transition: transform 300ms ease
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
+}
+
+.info .view {
+  color: var(--dark-gray-color);
+  font-size: var(--font-small);
+}
+
+/* ActionBtn */
+.info .actionBtn {
+  display: flex;
+  margin: var(--padding) 0;
+  justify-content: space-around;
+}
+
+.info .actionBtn button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--dark-gray-color);
+}
+
+.info .actionBtn button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: 16px;
+}
+
+.info .actionBtn button i.active {
+  color: var(--blue-color);
+}
+
+/* Channel Description */
+
+.info .channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--light-gray-color);
+  border-bottom: 1px solid var(--light-gray-color);
+}
+
+.info .channel .made_person_info {
+  display: flex;
+  align-items: center;
+}
+
+.info .channel .made_person_info .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel .made_person_info img {
+  width: var(--avarta-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+}
+
+.info .channel .made_person_info .info .name {
+  font-size: var(--font-medium);
+}
+
+.info .channel .made_person_info .info .subscribers {
+  color: var(--dark-gray-color);
+  font-size: var(--font-small);
+}
+
+.info .channel .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+
+/* Up Next */
+.UpNext {
+  padding: 0 var(--padding);
+}
+
+.UpNext > .title {
+  font-size: var(--font-small);
+  color: var(--dark-gray-color);
+  /* margin-bottom: calc(var(--padding) / 2); */
+}
+
+.UpNext .item {
+  display: flex;
+}
+
+.UpNext .item .img img {
+  width: 100%;
+}
+
+.UpNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.UpNext .item .info {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UpNext .item button .moreBtn {
+  flex: 1 1 5%;
+  /* height: 100%; */
+}
+
+.UpNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.UpNext .item .info .name,
+.UpNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--dark-gray-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding);
+  }
+}

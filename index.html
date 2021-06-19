@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81344aeaa7.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <title>Youtube Mobile</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- Video -->
+    <section class="video_player">
+        <video controls src="video/building_sketch.mp4" type="video/mp4"></video>
+    </section>
+    
+    <!-- Video Info and UpNext -->
+    <div class="infoAndUpNext">
+        <!-- Video Info-->
+    <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#DreamCoding</li>
+                <li>#DreamCoders</li>
+                <li>#Taeuk</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title clamp">
+                    유튜브 사이트를 반응형으로 만들어 볼꺼예요. 순수 HTML, CSS를 이용해서 (Javascript 약간) 만들어 보고, 다음에 Javascript를 배우면 동적으로 서버에서 데이터를 가져오는 연습을 더 해보도록 할께요.
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <span class="view">1M views 1 month ago</span>
+        </div>
+        <!-- ActionBtn -->
+        <ul class="actionBtn">
+            <li>
+                <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-share"></i><span>Share</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-plus"></i><span>Save</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-flag"></i><span>Report</span></button>
+            </li>
+        </ul>
+        <!-- Channel Description-->
+        <div class="channel">
+            <div class="made_person_info">
+                <img src="image/user-circle-solid.svg" alt="">
+                <div class="info">
+                    <div class="name">안태욱</div>
+                    <div class="subscribers">1M subscribes</div>
+                </div>
+            </div>
+            <button class="subscribe">subscibe</button>
+        </div>    
+    </section>
+
+    <!-- UpNext -->
+    <section class="UpNext">
+        <span class="title">Up next</span>
+        <ul>
+            <li class="item">
+                <div class="img"><img src="image/address-card-solid.svg" alt=""></div>
+                <div class="info">
+                    <span class="tittle">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? 웹개발 입문자편 강의를 시작합니다☆ (HTML, CSS, JavaScript+실전 프로젝트)</span>
+                    <span class="name">안태욱</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/address-card-solid.svg" alt=""></div>
+                <div class="info">
+                    <span class="tittle">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? 웹개발 입문자편 강의를 시작합니다☆ (HTML, CSS, JavaScript+실전 프로젝트)</span>
+                    <span class="name">안태욱</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="item">
+                <div class="img"><img src="image/address-card-solid.svg" alt=""></div>
+                <div class="info">
+                    <span class="tittle">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? 웹개발 입문자편 강의를 시작합니다☆ (HTML, CSS, JavaScript+실전 프로젝트)</span>
+                    <span class="name">안태욱</span>
+                    <span class="views">82K views</span>
+                </div>
+                <button class="moreBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </li>
+        </ul>
+        <!-- <div class="another_video_list">
+            
+            <div class="list1">
+                <div class="Thumbnail">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="video_info">
+                    <div class="video_explation">프론트엔드 강의, 프론트엔드 개발자가 되고싶다면? 웹개발 입문자편 강의를 시작합니다☆ (HTML, CSS, JavaScript+실전 프로젝트)</div>
+                    <div class="video_made_person">안태욱</div>
+                    <div class="views">82K views</div>
+                </div>
+                <div class="moreBtn"><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+            <div class="list2"></div>
+            <div class="list3"></div>
+        </div> -->
+    </section>
+    </div>
+
+
+
+
+<!--     
+    <div class="Youtube_page">
+        <div class="navbar">
+            <div class="navbar__logo">
+                <i class="fab fa-youtube"></i>
+                <a href="">Youtube</a>
+            </div>
+            <ul class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </ul>
+        </div>
+
+        <video control">
+            <source src="/media/cc0-videos/flower.webm"
+            type="video/webm">
+
+            <source src="/media/cc0-videos/flower.mp4"
+            type="video/mp4">
+        </video>
+        
+        <div class="information">
+            <div class="heshtag">
+                <li><a href="">#work</a></li>
+                <li><a href="">#market</a></li>
+            </div>
+            <div class="video_title">
+                <div class="title">
+                    Clone coding : Youtube Mobile Website 유투브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편. HTML,CSS,JavaScript
+                </div>
+                <span class="icons">
+                    <span class="good">
+                        <i class="fas fa-thumbs-up"></i>
+                    </span>
+                    <span class="sad">
+                        <i class="fas fa-thumbs-down"></i>
+                    </span>
+                    <span class="share">
+                        <i class="fas fa-share"></i>
+                    </span>
+                    <span class="save">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                    <span class="report">
+                        <i class="fas fa-flag"></i>
+                    </span>
+                </span>
+                <div class="made_person_info">
+                    <div class="info">
+                        <i class="fas fa-user-alt"></i>
+                        <div class="person_info">
+                            <div class="name">
+                                안태욱
+                            </div>
+                            <div class="subscribe_value">
+                                1M subscibe
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">Subscribe</a>
+                </div>
+            </div>
+            <div class="upload_date">
+
+            </div>
+            <div class="icons">
+
+            </div>
+        </div>
+
+        <div class="list">
+
+        </div>
+    </div> -->
+</body>
+</html>
